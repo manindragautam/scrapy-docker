@@ -2,3 +2,6 @@ version: '3'
 services:
   web:
     build: .
+    volumes:
+      - ./:/app
+    working_dir: /app
